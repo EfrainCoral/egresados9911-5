@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egresados CCP'99</title>
+    <link rel="icon" href="images/logoccp1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!------------inicio navegador--------->
+
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logoccp1.png"></a>
+
+           <div class="search-box">
+            <img src="icons/search.png">
+            <input type="text" placeholder="11-5 Jornada de la Tarde">
+           </div>
+
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="#" class="active-link"><img src="icons/home.png"><span>Inicio</span></a></li>
+                <li><a href="mosaico.html"><img src="icons/jobs.png"><span>Mosaico</span></a></li>
+                <li><a href="excompañeros.html"><img src="icons/network.png"><span>Excompañeros</span></a></li>
+                <li><a href="galeria.html" ><img src="icons/message.png"><span>Galería</span></a></li>
+                <li><a href="encuentros.html"><img src="icons/notification.png"><span>Reencuentros</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/logoccp1.png" class="nav-profile-img" onclick="toogleMenu()">
+            </div> 
+        </div>
+
+        <!----- profile-drop-down-menu------------------->
+
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/logoccp1.png">
+                    <div>
+                        <h3>Egresados CCP 1999</h3>
+                        <a href="profile.html">Desarollador</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="icons/feedback.png">
+                    <p>Dar una Opinión</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="icons/setting.png">
+                    <p>Configuración y Privacidad</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="icons/help.png">
+                    <p>Ayuda y Soporte</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="icons/display.png">
+                    <p>Diseño y Accesibilidad</p>
+                    <span>></span>
+                </a>
+                <a href="https://www.google.com/webhp?hl=es-419&sa=X&ved=0ahUKEwje_rmX6YeAAxVogIQIHQovCtcQPAgI" class="profile-menu-link">
+                    <img src="icons/logout.png">
+                    <p>Salír</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+
+
+    </nav>
+
+    <!---------final de navegador-->
+
+    <div class="container">
+
+    <!---------left sidebar----------------------------------------------->    
+        <div class="left-sidebar">
+          <div class="sidebar-profile-box">
+            <img src="images/Screenshot 2023-06-23 4.11.13 PM.png" width="100%">
+            <div class="sidebar-profile-info">
+                <img src="images/logoccp1.png">
+                <h1>Colegio Ciudad de Pasto</h1>
+                <h3>Egresados 1999, 11-5 J:II</h3>
+                <ul>
+                    <li> Visitas de perfíl <span>52</span></li>
+                    <li> Posteriores de perfíl <span>32</span></li>
+                    <li> Conexiones de perfíl <span>12</span></li>
+                </ul>
+            </div>
+
+             <audio controls src="images/y2mate.com - Willie Colón  Cueste lo que cueste.mp3"></audio>
+
+             
+
+            <div class="sidebar-profile-link">
+                <a href="#"> <img src="icons/items.png">Mis Apuntes</a>
+                <a href="#"> <img src="icons/premium.png">Prueba Premium</a>
+            </div>
+          </div>
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>RECIENTES</h3>
+                <a href="#"> <img src="icons/recent.png">Ser padres hoy</a>
+                <a href="#"> <img src="icons/recent.png">Costo de mantener un hijo</a>
+                <a href="#"> <img src="icons/recent.png">Enseñar en Inglés</a>
+                <a href="#"> <img src="icons/recent.png">Bailar en Inglés</a>
+                <a href="#"> <img src="icons/recent.png">La tercera Edad</a>
+                <a href="#"> <img src="icons/recent.png">Como criar hijos</a>
+                <h3>GRUPOS</h3>
+                <a href="#"> <img src="icons/group.png">Grupo de Compañeros</a>
+                <a href="#"> <img src="icons/group.png">Grupo de otros salones</a>
+                <a href="#"> <img src="icons/group.png">Grupo de trabajo</a>
+                <a href="#"> <img src="icons/group.png">Grupo familiar</a>
+                 <h3>HAGSHTAG</h3>
+                 <a href="#"> <img src="icons/hashtag.png">Padreshoy</a>
+                 <a href="#"> <img src="icons/hashtag.png">pañaleras</a>
+                 <a href="#"> <img src="icons/hashtag.png">Nomealcanzalaquincena</a>
+                 <div class="discover-more-link">
+                    <a href="#">Descubre más...</a>
+                 </div>
+            </div>
+
+            <p id="showMoreLink" onclick="toggleActivity()"> Mostrar Mas <b>+</b></p>
+
+        </div>
+      <!---------center content-----------------------------------------------> 
+
+        <div class="main-content">
+             
+           <div class="create-post">
+            <div class="create-post-input">
+                <img src="images/logoccp1.png">
+                <textarea rows="2" placeholder=" ****11-5**** Generación 99 **** Jornada: Tarde ****"></textarea>
+            </div>
+
+
+              <div class="clock">
+            <h1>Cuenta Regresiva 25 Aniversario: <span id="clock"></span> </h1></div>
+            
+
+            <div class="create-post-links">
+                <li><img src="icons/photo.png">Foto</li>
+                <li><img src="icons/video.png">Video</li>
+                <li><img src="icons/event.png">Evento</li>
+                <li>Correo</li> 
+            </div>
+           </div>
+           <div class="sort-by">
+            <hr>
+            <p>Ordenar por: <span>Arriba <img src="icons/down-arrow.png"></span></p>
+           </div>
+
+           <!-------------------Posteos--------------->
+
+        <div class="post">
+            <div class="post-author">
+                <img src="images/Screenshot 2023-07-11 5.38.29 PM.png">
+                <div>
+                    <h3>Leidy Viviana Martinez</h3>
+                    <small>Adm de empresas</small>
+                    <small>hace 1 hrs</small>
+                </div>
+            </div>
+            <p> Final de año 1999 aula multiple</p>
+            <img src="galeria/IMG-20230705-WA0066 (1).jpg" width="100%" height="60%">
+            <div class="post-stats">
+                <img src="icons/thumbsup.png">
+                <img src="icons/love.png">
+                <img src="icons/clap.png">
+                <span class="liked-users">Larry Burbano y otros 27</span>
+                <div>
+                    <span>22 comentarios &middot; 40 vistas</span>
+                </div>
+            </div>
+            <div class="post-activity">
+                <div>
+                    <img src="images/logoccp1.png" class="post-activity-user-icon">
+                    <img src="icons/down-arrow.png" class="post-activity-arrow-icon">
+                </div>
+                 <div class="post-activity-link">
+                    <img src="icons/like.png">
+                    <span>Me gusta</span>
+                 </div>
+                 <div class="post-activity-link">
+                    <img src="icons/comment.png">
+                    <span>Comentarios</span>
+                 </div>
+                 <div class="post-activity-link">
+                    <img src="icons/share.png">
+                    <span>Visitas</span>
+                 </div>
+                 <div class="post-activity-link">
+                    <img src="icons/send.png">
+                    <span>Enviados</span>
+                 </div>
+            </div>
+        </div>
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/WhatsApp Image 2023-07-18 at 2.23.22 PM.jpeg">
+                    <div>
+                        <h3>Larry Burbano</h3>
+                        <small> Docente y Master de Fisíca | Independiente</small>
+                        <small> Hace 4 hrs</small>
+                    </div>
+                </div>
+                <p>Nuestros recuerdos son tus recuerdos!</p>
+                <video src="images/bkJHKlkLCyo8UkdgCzE___1.mp4" controls loop width="100%" height="100%">
+                <div class="post-stats">
+                    <img src="icons/thumbsup.png">
+                    <img src="icons/love.png">
+                    <img src="icons/clap.png">
+                    <span class="liked-users"> Mauricio Benavides y otras 31 personas</span> 
+                    <div>
+                        <span>32 comentarios &middot; 40 vistas</span>
+                    </div> 
+                </div>
+    
+                 <div class="post-activity">
+                    <div>
+                        <img src="images/logoccp1.png" class="post-activity-user-icon">
+                        <img src="icons/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                     <div class="post-activity-link">
+                        <img src="icons/like.png">
+                        <span>Me gusta</span>
+                     </div>
+                     <div class="post-activity-link">
+                        <img src="icons/comment.png">
+                        <span>Comentarios</span>
+                     </div>
+                     <div class="post-activity-link">
+                        <img src="icons/share.png">
+                        <span>Visitas</span>
+                     </div>
+                     <div class="post-activity-link">
+                        <img src="icons/send.png">
+                        <span>Enviados</span>
+                     </div>
+                 </div>
+                </div>
+
+
+
+
+                <div class="post">
+                    <div class="post-author">
+                        <img src="images/Screenshot 2023-07-11 3.03.22 PM.png">
+                        <div>
+                            <h3>Olga Gamboa</h3>
+                            <small> Cueros Olga Stella | Independiente</small>
+                            <small> Hace 8 hrs</small>
+                        </div>
+                    </div>
+                    <p>Recuerdo de equipo de baloncesto intercursos</p>
+                    <img src="galeria/fotocurso.jpg" width="100%">
+                    <div class="post-stats">
+                        <img src="icons/thumbsup.png">
+                        <img src="icons/love.png">
+                        <img src="icons/clap.png">
+                        <span class="liked-users"> Mauricio Benavides y otras 31 personas</span> 
+                        <div>
+                            <span>32 comentarios &middot; 40 vistas</span>
+                        </div> 
+                    </div>
+        
+                     <div class="post-activity">
+                        <div>
+                            <img src="images/logoccp1.png" class="post-activity-user-icon">
+                            <img src="icons/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                         <div class="post-activity-link">
+                            <img src="icons/like.png">
+                            <span>Me gusta</span>
+                         </div>
+                         <div class="post-activity-link">
+                            <img src="icons/comment.png">
+                            <span>Comentarios</span>
+                         </div>
+                         <div class="post-activity-link">
+                            <img src="icons/share.png">
+                            <span>Visitas</span>
+                         </div>
+                         <div class="post-activity-link">
+                            <img src="icons/send.png">
+                            <span>Enviados</span>
+                         </div>
+                     </div>
+                    </div>
+
+
+
+                    <div class="post">
+                        <div class="post-author">
+                            <img src="images/Screenshot 2023-07-18 3.44.53 PM.png">
+                            <div>
+                                <h3>Nini Johana Timarán</h3>
+                                <small> Ama de casa | Arquitecta</small>
+                                <small> Hace 12 hrs</small>
+                            </div>
+                        </div>
+                        <p> Recuerdo Excursion</p>
+                        <img src="galeria/WhatsApp Image 2023-07-17 at 2.13.11 PM (1).jpeg" width="100%">
+                        <div class="post-stats">
+                            <img src="icons/thumbsup.png">
+                            <img src="icons/love.png">
+                            <img src="icons/clap.png">
+                            <span class="liked-users"> yeimy Burbano y otras 31 personas</span> 
+                            <div>
+                                <span>32 comentarios &middot; 40 vistas</span>
+                            </div> 
+                        </div>
+            
+                         <div class="post-activity">
+                            <div>
+                                <img src="images/logoccp1.png" class="post-activity-user-icon">
+                                <img src="icons/down-arrow.png" class="post-activity-arrow-icon">
+                            </div>
+                             <div class="post-activity-link">
+                                <img src="icons/like.png">
+                                <span>Me gusta</span>
+                             </div>
+                             <div class="post-activity-link">
+                                <img src="icons/comment.png">
+                                <span>Comentarios</span>
+                             </div>
+                             <div class="post-activity-link">
+                                <img src="icons/share.png">
+                                <span>Visitas</span>
+                             </div>
+                             <div class="post-activity-link">
+                                <img src="icons/send.png">
+                                <span>Enviados</span>
+                             </div>
+                         </div>
+                        </div>
+        
+        
+
+
+
+
+                <div class="post">
+                    <div class="post-author">
+                        <img src="images/Screenshot 2023-07-18 2.27.58 PM.png">
+                        <div>
+                            <h3>Ivon Iles</h3>
+                            <small> Abogada | Derecho laboral</small>
+                            <small>Hace 16 hrs</small>
+                        </div>
+                    </div>
+                    <p> Encuentro con Luchito</p>
+                    <img src="encuentros/luchoycompas.jpg" width="100%">
+                    <div class="post-stats">
+                        <img src="icons/thumbsup.png">
+                        <img src="icons/love.png">
+                        <img src="icons/clap.png">
+                        <span class="liked-users"> Jaime Chavez y otras 13 personas</span>  
+                        <div>
+                            <span>22 comentarios &middot; 40 vistas</span>
+                        </div>
+                    </div>   
+        
+                     <div class="post-activity">
+                        <div>
+                            <img src="images/logoccp1.png" class="post-activity-user-icon">
+                            <img src="icons/down-arrow.png" class="post-activity-arrow-icon">
+                        </div>
+                         <div class="post-activity-link">
+                            <img src="icons/like.png">
+                            <span>Me gusta</span>
+                         </div>
+                         <div class="post-activity-link">
+                            <img src="icons/comment.png">
+                            <span>Comentarios</span>
+                         </div>
+                         <div class="post-activity-link">
+                            <img src="icons/share.png">
+                            <span>Visitas</span>
+                         </div>
+                         <div class="post-activity-link">
+                            <img src="icons/send.png">
+                            <span>Enviados</span>
+                         </div>
+                     </div>
+                    </div>
+
+
+                    <div class="post">
+                        <div class="post-author">
+                            <img src="images/Screenshot 2023-07-11 11.09.49 AM.png">
+                            <div>
+                                <h3>Marly Villamarin</h3>
+                                <small>Independiente | Asesoria Comercial</small>
+                                <small> Hace 1 d</small>
+                            </div>
+                        </div>
+                        <p> Juegos intercursos 1998</p>
+                        <img src="galeria/IMG-20230628-WA0031 (1).jpg" width="100%">
+                        <div class="post-stats">
+                            <img src="icons/thumbsup.png">
+                            <img src="icons/love.png">
+                            <img src="icons/clap.png">
+                            <span class="liked-users"> Angela Tovar y otras 31 personas</span>  
+                            <div>
+                                <span>22 comentarios &middot; 40 vistas</span>
+                            </div>
+                        </div>
+                         <div class="post-activity">
+                            <div>
+                                <img src="images/logoccp1.png" class="post-activity-user-icon">
+                                <img src="icons/down-arrow.png" class="post-activity-arrow-icon">
+                            </div>
+                             <div class="post-activity-link">
+                                <img src="icons/like.png">
+                                <span>Me gusta</span>
+                             </div>
+                             <div class="post-activity-link">
+                                <img src="icons/comment.png">
+                                <span>Comentarios</span>
+                             </div>
+                             <div class="post-activity-link">
+                                <img src="icons/share.png">
+                                <span>Visitas</span>
+                             </div>
+                             <div class="post-activity-link">
+                                <img src="icons/send.png">
+                                <span>Enviados</span>
+                             </div>
+                         </div>
+                        </div>
+
+
+        </div>
+
+
+
+
+        <!---------right sidebar-----------------------------------------------> 
+        <div class="right-sidebar">
+
+          <div class="sidebar-news">
+            <img src="icons/more.png" class="info-icon">
+            <h3> Noticias en Tendencia </h3>
+            <a href="#"> Willy Colon "Cueste lo que cueste" en primeras listas.</a>
+            <span>Hace 1hrs &middot; 10,934 Visitas</span>
+
+            <a href="#"> Rumba house club del comercio organiza Asociacion padres de familia. </a>
+            <span> Hace 6hrs &middot; 7,934 visitas</span>
+
+            <a href="#">El profe de inglés Jaime Salazar fue visto ebrio en las fiestas del colegio, fake news. </a>
+            <span> Hace 10hrs &middot; 5,934 lectores</span>
+
+            <a href="#"> Los grados se efectuarían en el año 2000 en el teatro según Lucho Unigarro.</a>
+            <span>Hace 12d &middot; 4,934 lectores</span>
+
+            <a href="#"> Alumnos pillados volandose del colegio se los llevarían la policía del potrerillo.</a>
+            <span> Hace 20d ago &middot; 2,934 lectores</span>
+
+            <a href="#" class="read-more-link">Leer Más</a>
+          </div>
+
+          <div class="sidebar-adq">
+            <small>Avisos &middot; &middot; &middot; </small>
+            <p>Domina los 5 principios de las relaciones Interpersonales</p>
+            <div>
+                <img src="images/logoccp1.png">
+                <img src="images/Logosoftwelements.png">
+            </div>
+            <b>Marca y Demanda SoftwElements</b>
+            <a href="#" class="ad-link">Leer Más</a>
+          </div>
+
+          <div class="sidebar-useful-links">
+            <a href="index.html">Inicio -</a>
+            <a href="mosaico.html">Mosaico -</a>
+            <a href="excompañeros.html">Excompañeros -</a>
+            <a href="galeria.html">Galería -</a>
+            <a href="encuentros.html">Reencuentros -</a>
+            <a href="#">Centro de ayuda</a>
+            <a href="#">Politicas de privacidad </a>
+            <a href="#">- Más...</a>
+
+            <div class="copyright-msg">
+               <a href="profile.html"> <img src="images/Logosoftwelements.png">
+                <p>SoftwElements &#169; 2023. todos los derechos reservados</p></a>
+            </div>
+          </div>
+
+        </div>
+
+    </div>
+
+    <script src="main.js"></script>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        function toogleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+    <script>
+        let sideActivity = document.getElementById("sidebarActivity");
+        let moreLink = document.getElementById("showMoreLink");
+
+        function toggleActivity(){
+            sideActivity.classList.toggle("open-activity");
+
+            if (sideActivity.classList.contains("open-activity")){
+                moreLink.innerHTML = "Mostrar menos <b>-</b>";
+            }else{
+                moreLink.innerHTML = "Mostrar mas <b>+</b>";
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
